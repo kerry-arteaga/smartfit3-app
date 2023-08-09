@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "301743156631",
+    "project_id": "smartfit-c05df",
+    "storage_bucket": "smartfit-c05df.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:301743156631:android:4ae520b40fffc63192a8d2",
+        "android_client_info": {
+          "package_name": "com.example.smartfit3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "301743156631-rjsk2qa38944usst04avtmiba6j1ll7m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLHxx2h7_lSWDBdQ45QLF9aFGts7Ug0oU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "301743156631-rjsk2qa38944usst04avtmiba6j1ll7m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:301743156631:android:cd683239a903532e92a8d2",
+        "android_client_info": {
+          "package_name": "com.smartfit3.smartfit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "301743156631-rjsk2qa38944usst04avtmiba6j1ll7m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLHxx2h7_lSWDBdQ45QLF9aFGts7Ug0oU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "301743156631-rjsk2qa38944usst04avtmiba6j1ll7m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
