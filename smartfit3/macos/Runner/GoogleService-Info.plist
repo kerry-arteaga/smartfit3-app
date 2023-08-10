@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>301743156631-j1ks9cnhlr750hhqov55rcak2j02p8g5.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.301743156631-j1ks9cnhlr750hhqov55rcak2j02p8g5</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAKRpBGslhe8sBWZxo5VXkIJREeZpN_HHI</string>
+	<key>GCM_SENDER_ID</key>
+	<string>301743156631</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.smartfit3.RunnerTests</string>
+	<key>PROJECT_ID</key>
+	<string>smartfit-c05df</string>
+	<key>STORAGE_BUCKET</key>
+	<string>smartfit-c05df.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:301743156631:ios:f564d69436071f2392a8d2</string>
+</dict>
+</plist>
