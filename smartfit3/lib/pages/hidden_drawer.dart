@@ -42,7 +42,9 @@ class _HiddenDrawerState extends State<HiddenDrawer> {
           baseStyle: myTextStyle,
           selectedStyle: myTextStyle,
         ),
-        const WorkoutPage(),
+        const WorkoutPage(
+          title: "My workouts",
+        ),
       ),
       ScreenHiddenDrawer(
         ItemHiddenMenu(
