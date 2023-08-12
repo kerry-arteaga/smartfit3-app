@@ -2,7 +2,7 @@ import 'package:mysql1/mysql1.dart';
 
 class Mysql {
   static String url = 'jdbc:mysql://localhost:3306/mysql';
-  static String host = 'localhost';
+  static String host = '10.0.2.2';
   static String user = 'root';
   static String password = 'root@0701';
   static String db = 'fitness';
