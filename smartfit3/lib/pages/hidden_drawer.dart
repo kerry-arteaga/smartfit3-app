@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hidden_drawer_menu/hidden_drawer_menu.dart';
+import 'package:smartfit3/pages/completed_workouts.dart';
 import 'package:smartfit3/pages/food_log.dart';
 import 'package:smartfit3/pages/home_page.dart';
 import 'package:smartfit3/pages/messages.dart';
@@ -42,9 +43,7 @@ class _HiddenDrawerState extends State<HiddenDrawer> {
           baseStyle: myTextStyle,
           selectedStyle: myTextStyle,
         ),
-        const WorkoutPage(
-          title: "My workouts",
-        ),
+        const CompleteWorkoutPage(),
       ),
       ScreenHiddenDrawer(
         ItemHiddenMenu(

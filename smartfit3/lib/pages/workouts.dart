@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:smartfit3/logic/mysql.dart';
+import 'package:smartfit3/pages/completed_workouts.dart';
 
 class WorkoutPage extends StatefulWidget {
   const WorkoutPage({Key? key, required this.title}) : super(key: key);
@@ -31,6 +32,7 @@ class WorkoutPageState extends State<WorkoutPage> {
     });
   }
 
+
   void addWorkout(String workoutDate, String workoutTitle, int numExercises) {
     db.getConnection().then((conn) {
       String insertWorkoutSql = "INSERT INTO fitness.workouts (workout_date, workout_title, num_exercies) VALUES (?, ?, ?)";
@@ -50,36 +52,6 @@ class WorkoutPageState extends State<WorkoutPage> {
   }
 
 
-  Widget buildWorkoutTable() {
-    return SingleChildScrollView(
-      scrollDirection: Axis.horizontal,
-      child: DataTable(
-         columns: const [
-          DataColumn(label: Text('Workout title')),
-          DataColumn(label: Text('Exercises')),
-          DataColumn(label: Text('Actions')),
-        ],
-        rows: workouts.map<DataRow>((Map<String, dynamic> row) {
-          return DataRow(
-            cells: [
-              DataCell(Text(row['workout_title'].toString())),
-              DataCell(Text(row['num_exercies'].toString())),
-              DataCell(
-                ElevatedButton(
-                  onPressed: () {
-                    deleteWorkout(row['workout_title']);
-                  },
-                  child: Text('Delete'),
-                ),
-              ),
-            ],
-          );
-        }).toList(),
-      ),
-    );
-  }
-
-
   @override
   Widget build(BuildContext context) {
 
@@ -93,8 +65,10 @@ class WorkoutPageState extends State<WorkoutPage> {
           ),
         ),
       child: SingleChildScrollView(
+        scrollDirection: Axis.vertical,
           child: Column(
             children: [
+              SizedBox(height: 30),
                 TextFormField(
                   controller: workoutDateController,
                   decoration: const InputDecoration(
@@ -173,10 +147,15 @@ class WorkoutPageState extends State<WorkoutPage> {
                   child: const Text('Add Workout'),
                 ),
                 ElevatedButton(
-                  onPressed: getWorkouts,
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const CompleteWorkoutPage()));
+                  },
                   child: const Text('Completed Workouts'),
                 ),
-                buildWorkoutTable(),
+                //buildWorkoutTable(),
               ],
           ),
       ),
