@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:smartfit3/logic/mysql.dart';
 import 'package:smartfit3/pages/completed_workouts.dart';
+import 'package:smartfit3/pages/hidden_drawer.dart';
 
 class WorkoutPage extends StatefulWidget {
   const WorkoutPage({Key? key, required this.title}) : super(key: key);
@@ -68,7 +69,18 @@ class WorkoutPageState extends State<WorkoutPage> {
         scrollDirection: Axis.vertical,
           child: Column(
             children: [
-              SizedBox(height: 30),
+              const SizedBox(height: 30),
+                ElevatedButton(
+                    onPressed: (){
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const HiddenDrawer(),
+                        ),
+                      );
+                    },
+                    child: const Text("Home"),
+                ),
                 TextFormField(
                   controller: workoutDateController,
                   decoration: const InputDecoration(

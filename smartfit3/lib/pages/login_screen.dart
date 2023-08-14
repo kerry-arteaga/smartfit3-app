@@ -1,5 +1,8 @@
 import "package:flutter/material.dart";
 import "package:smartfit3/pages/hidden_drawer.dart";
+import 'package:firebase_core/firebase_core.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+
 //import 'package:smartfit/pages/pallete.dart';
 
 class LoginScreen extends StatefulWidget {
